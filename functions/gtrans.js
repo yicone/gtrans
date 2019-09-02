@@ -4,9 +4,11 @@ const axios = require('axios');
 exports.handler = async event => {
 
   let { sl = 'en', tl = 'zh-CN', q } = event.queryStringParameters;
+
   var translate_url = `http://translate.google.cn/translate_a/single?client=gtx&sl=${sl}&tl=${tl}&dt=t&q=${q}`;
   console.log(translate_url);
-  let response = await axios.get(translate_url);
+  var encodedUrl = encodeURI(translate_url);
+  let response = await axios.get(encodedUrl);
   console.log(response.data);
   var obj = eval(response.data);
   var r = obj[0][0][0];
