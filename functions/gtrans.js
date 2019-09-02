@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports.hello = async event => {
+exports.handler = async event => {
 
   let { sl, tl, q } = event.queryStringParameters;
   var translate_url = `http://translate.google.cn/translate_a/single?client=gtx&sl=${sl}&tl=${tl}&dt=t&q=${q}`;
