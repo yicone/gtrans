@@ -1,7 +1,7 @@
 [build]
-  functions = "built-functions"
-  build = "npm install && npm run build"
+  build = "echo 'begin build' && npm install && npm run build"
   publish = "site"
+  functions = "built-functions"
 
 [build.environment]
   FAUNADB_SECRET = "fnADXcfEHUACBIGRb6BUVBNJ5IybVLweUx_esedk"
