@@ -8,6 +8,7 @@
 		"bootstrap": "node src/functions/scripts/bootstrap-fauna-database.js",
 		"migration": "faunadb-migrate migrate",
 		"build": "netlify-lambda -c config/webpack.functions.js build src/functions",
+		"prebuild": "echo 'setup faunaDB' && npm run bootstrap && npm run migration",
 		"start": "netlify-lambda -c config/webpack.functions.js serve src/functions",
 		"prestart": "echo 'setup faunaDB' && npm run bootstrap && npm run migration"
 	},
