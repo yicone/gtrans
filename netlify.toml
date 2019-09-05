@@ -1,5 +1,6 @@
 [build]
   functions = "built-functions"
+  build = "npm install && npm run build"
   publish = "site"
 
 [build.environment]
