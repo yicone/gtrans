@@ -1,5 +1,5 @@
 [build]
-  build = "echo 'begin build' && npm install && npm run build"
+  command = "echo 'begin build' && npm install && npm run build"
   publish = "site"
   functions = "built-functions"
 
