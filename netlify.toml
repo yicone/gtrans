@@ -1,3 +1,6 @@
 [build]
-  functions = "built-lambda"
-  publish = "build"
+  functions = "built-functions"
+  publish = "site"
+
+[build.environment]
+  FAUNADB_SECRET = "fnADXcfEHUACBIGRb6BUVBNJ5IybVLweUx_esedk"
