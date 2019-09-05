@@ -1,0 +1,8 @@
+type Search {
+	content: String!
+	engine: String!
+}
+
+# type Query {
+#     allSearch: [Search!]
+# }

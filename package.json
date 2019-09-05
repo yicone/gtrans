@@ -1,0 +1,33 @@
+{
+	"name": "whitehole",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"bootstrap": "node src/functions/scripts/bootstrap-fauna-database.js",
+		"migration": "faunadb-migrate migrate",
+		"build": "netlify-lambda -c config/webpack.functions.js build src/functions",
+		"start": "netlify-lambda -c config/webpack.functions.js serve src/functions",
+		"prestart": "echo 'setup faunaDB' && npm run bootstrap && npm run migration"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yicone/gtrans.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/yicone/gtrans/issues"
+	},
+	"homepage": "https://github.com/yicone/gtrans#readme",
+	"dependencies": {
+		"axios": "^0.19.0",
+		"faunadb": "^2.8.0"
+	},
+	"devDependencies": {
+		"faunadb-migrate": "git+https://github.com/BrunoQuaresma/faunadb-migrate.git#master",
+		"netlify-lambda": "^1.6.3"
+	}
+}
