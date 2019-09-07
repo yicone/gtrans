@@ -5,3 +5,10 @@
 
 [build.environment]
   FAUNADB_SECRET = "fnADXcfEHUACBIGRb6BUVBNJ5IybVLweUx_esedk"
+
+[dev]
+  command = "npm run start"
+  port = 3000
+
+[dev.environment]
+  FAUNADB_SECRET = "fnADXcfEHUACBIGRb6BUVBNJ5IybVLweUx_esedk"

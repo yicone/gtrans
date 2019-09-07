@@ -8,4 +8,4 @@ jspm_packages
 .netlify
 
 # built files
-built-lambda
+built-functions
