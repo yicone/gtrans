@@ -21,6 +21,12 @@ exports.handler = (event, context, callback) => {
       console.log('error', error)
       return callback(null, {
         statusCode: 400,
+        headers: {
+          /* Required for CORS support to work */
+          'Access-Control-Allow-Origin': '*',
+          /* Required for cookies, authorization headers with HTTPS */
+          'Access-Control-Allow-Credentials': 'true'
+        },
         body: JSON.stringify(error)
       })
     })
