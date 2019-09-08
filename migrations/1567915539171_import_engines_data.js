@@ -1,4 +1,4 @@
-var enginesData = require('../config/engine-config.json')
+var enginesData = require('../config/engines-data.json')
 
 module.exports.up = (q) => {
   return q.Map(enginesData, q.Lambda('engine', q.Create(q.Collection('Engines'), { data: q.Var('engine') })))
