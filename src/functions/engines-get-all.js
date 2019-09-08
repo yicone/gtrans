@@ -20,7 +20,7 @@ exports.handler = (event, context, callback) => {
           /* Required for cookies, authorization headers with HTTPS */
           'Access-Control-Allow-Credentials': 'true'
         },
-        body: JSON.stringify(response)
+        body: response
       })
     })
     .catch((error) => {
