@@ -6,10 +6,11 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"bootstrap": "node src/functions/scripts/bootstrap-fauna-database.js",
-		"migration": "faunadb-migrate migrate",
+		"migrate": "faunadb-migrate migrate",
 		"build": "netlify-lambda build src/functions -c config/webpack.functions.js",
-		"prebuild": "echo 'setup faunaDB' && npm run bootstrap && npm run migration",
+		"prebuild": "echo 'setup faunaDB' && npm run bootstrap && npm run migrate",
 		"start": "netlify-lambda serve src/functions -c config/webpack.functions.js",
+		"prestart": "echo 'setup faunaDB' && npm run bootstrap && npm run migrate"
 	},
 	"engines": {
 		"node": ">= 11.0.0"

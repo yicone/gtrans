@@ -1,0 +1,142 @@
+[
+  {
+    "logo": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+    "name": "Google",
+    "offset": {
+      "bottom": 87,
+      "left": -120,
+      "top": -76
+    },
+    "url": "https://www.google.com/search?q=${k}"
+  },
+  {
+    "logo": "https://pbs.twimg.com/profile_images/968232588958560256/IfOqS8l2.jpg",
+    "name": "Twitter",
+    "offset": {
+      "bottom": 87,
+      "left": -120,
+      "top": -76
+    },
+    "url": "https://twitter.com/search?q=${k}"
+  },
+  {
+    "logo": "https://www.search.ask.com/assets/b/a-logo-small.png",
+    "name": "Ask",
+    "offset": {
+      "bottom": 120,
+      "left": -120,
+      "top": -60
+    },
+    "url": "https://www.search.ask.com/web?q=${k}"
+  },
+  {
+    "logo": "https://qsf.ec.quoracdn.net/-3-images.logo.wordmark_default.svg-26-32753849bf197b54.svg",
+    "name": "Quora",
+    "offset": {
+      "bottom": 0,
+      "left": 0,
+      "top": 0
+    },
+    "url": "https://www.quora.com/search?q=${k}"
+  },
+  {
+    "logo": "https://img01.sogoucdn.com/app/a/100520122/0c6aeb64_jieguo.png",
+    "name": "搜狗",
+    "offset": {
+      "bottom": 127,
+      "left": 0,
+      "top": 0
+    },
+    "url": "https://www.sogou.com/web?query=${k}"
+  },
+  {
+    "logo": "https://cn.bing.com/sa/simg/CN_Logo_Gray.png",
+    "name": "必应",
+    "offset": {
+      "bottom": 60,
+      "left": -80,
+      "top": -72
+    },
+    "url": "https://cn.bing.com/search?setmkt=zh-cn&setlang=zh-cn&q=${k}"
+  },
+  {
+    "logo": "http://img.t.sinajs.cn/t6/style/images/global_nav/WB_logo.png?id=1404211047727",
+    "name": "微博",
+    "offset": {
+      "bottom": 163,
+      "left": 0,
+      "top": -180
+    },
+    "url": "http://s.weibo.com/weibo/${k}"
+  },
+  {
+    "logo": "https://p.ssl.qhimg.com/t0184e4ce3cb83220c1.png",
+    "name": "360搜索",
+    "offset": {
+      "bottom": 80,
+      "left": -10,
+      "top": 0
+    },
+    "url": "https://www.haosou.com/s?q=${k}"
+  },
+  {
+    "logo": "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png",
+    "name": "百度",
+    "offset": {
+      "bottom": 70,
+      "left": -90,
+      "top": -45
+    },
+    "url": "https://www.baidu.com/s?wd=${k}"
+  },
+  {
+    "logo": "http://read.html5.qq.com/image?src=forum&q=5&r=0&imgflag=7&imageUrl=http://mmbiz.qpic.cn/mmbiz_png/8NUG2LLiagCZOc4yRJkDPgAnJgtEQKV8tgicPwwEMtwpYZvicPI3gD8kX0ZsWWU9T9dsUfCso64EVC2C9dEC88LDw/0.png",
+    "name": "极客搜索",
+    "offset": {
+      "bottom": 200,
+      "left": 0,
+      "top": -120
+    },
+    "url": "https://s.geekbang.org/search/c=0/k=${k}/t="
+  },
+  {
+    "logo": "http://www.hack.institute/events/connected-car/img/github-logo-white.png",
+    "name": "GitHub",
+    "offset": {
+      "bottom": 200,
+      "left": 0,
+      "top": -130
+    },
+    "url": "https://github.com/search?q=${k}"
+  },
+  {
+    "logo": "https://qph.ec.quoracdn.net/main-qimg-81323e136c3a148d9d74ac3ed060b4c2",
+    "name": "Instapaper",
+    "offset": {
+      "bottom": 0,
+      "left": 0,
+      "top": 0
+    },
+    "url": "https://www.instapaper.com/search?q=${k}"
+  },
+  {
+    "logo": "https://evernote.com/media/img/brand-guide/evernote-logos/Evernote_H.png",
+    "name": "Evernote",
+    "offset": {
+      "bottom": 0,
+      "left": 0,
+      "top": 0
+    },
+    "url": "https://www.evernote.com/Home.action#ses=1&sh=5&sds=5&x=${k}"
+  },
+  {
+    "logo": "https://dr0wv9n0kx6h5.cloudfront.net/664cb69d34d0ef040ff8a446e429bce8feb54b41/site/images/logo-big.png",
+    "name": "Wunderlist",
+    "offset": {
+      "bottom": 0,
+      "left": 0,
+      "top": 0
+    },
+    "url": "https://www.wunderlist.com/webapp#/search/${k}"
+  }
+]
