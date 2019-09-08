@@ -15,12 +15,13 @@ exports.handler = (event, context, callback) => {
       return callback(null, {
         statusCode: 200,
         headers: {
+          'Content-Type': 'application/json',
           /* Required for CORS support to work */
           'Access-Control-Allow-Origin': '*',
           /* Required for cookies, authorization headers with HTTPS */
           'Access-Control-Allow-Credentials': 'true'
         },
-        body: response
+        body: JSON.stringify(response)
       })
     })
     .catch((error) => {
