@@ -10,7 +10,9 @@
 		"build": "netlify-lambda build src/functions -c config/webpack.functions.js",
 		"prebuild": "echo 'setup faunaDB' && npm run bootstrap && npm run migration",
 		"start": "netlify-lambda serve src/functions -c config/webpack.functions.js",
-		"prestart": "echo 'setup faunaDB' && npm run bootstrap && npm run migration"
+	},
+	"engines": {
+		"node": ">= 11.0.0"
 	},
 	"repository": {
 		"type": "git",

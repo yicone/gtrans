@@ -5,6 +5,7 @@
 
 [build.environment]
   FAUNADB_SECRET = "fnADXcfEHUACBIGRb6BUVBNJ5IybVLweUx_esedk"
+  NODE_VERSION = "12.10.0"
 
 [dev]
   command = "npm run start"
@@ -12,3 +13,4 @@
 
 [dev.environment]
   FAUNADB_SECRET = "fnADXcfEHUACBIGRb6BUVBNJ5IybVLweUx_esedk"
+  NODE_VERSION = "12.10.0"
