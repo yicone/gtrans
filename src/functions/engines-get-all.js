@@ -11,7 +11,7 @@ exports.handler = (event, context, callback) => {
   var r = pageHelper
     .map((ref) => q.Get(ref))
     .each((data) => {
-      var response = data.map((_) => _.data)
+      var response = data.filter((_) => !_.data.disabled).map((_) => _.data)
       return callback(null, {
         statusCode: 200,
         headers: {

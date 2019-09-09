@@ -74,7 +74,8 @@
       "top": -180
     },
     "url": "http://s.weibo.com/weibo/${k}",
-    "group": "2"
+    "group": "2",
+    "disabled": true
   },
   {
     "logo": "https://p.ssl.qhimg.com/t0184e4ce3cb83220c1.png",
@@ -107,7 +108,8 @@
       "top": -120
     },
     "url": "https://s.geekbang.org/search/c=0/k=${k}/t=",
-    "group": "3"
+    "group": "3",
+    "disabled": true
   },
   {
     "logo": "http://www.hack.institute/events/connected-car/img/github-logo-white.png",
