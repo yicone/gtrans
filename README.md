@@ -1,2 +1,11 @@
-npm i -g netlify-cli
-npm i -g git+https://github.com/BrunoQuaresma/faunadb-migrate.git\#master
+## Setup
+```sh
+pnpm add -g netlify-cli
+netlify init
+```
+
+## Test locally
+```sh
+pnpm dev
+curl 'http://localhost:3000/.netlify/functions/engines-get-all'
+```
