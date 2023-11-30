@@ -1,0 +1,15 @@
+[build]
+  command = "echo 'begin build'"
+  publish = "site"
+
+[functions]
+  directory = "src/functions"
+
+[build.environment]
+  NODE_VERSION = "20.10.0"
+
+[dev]
+  port = 3000
+
+[dev.environment]
+  NODE_VERSION = "20.10.0"
