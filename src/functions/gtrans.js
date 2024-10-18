@@ -1,13 +1,24 @@
 'use strict'
-const axios = require('axios')
+import axios from 'axios'
 
 export const handler = async (event) => {
   let { sl = 'en', tl = 'zh-CN', q } = event.queryStringParameters
 
-  var translate_url = `http://translate.google.cn/translate_a/single?client=gtx&sl=${sl}&tl=${tl}&dt=t&q=${q}`
+  var translate_url = `https://translate.google.com.hk/?sl=${sl}&tl=${tl}&text=${q}&op=translate`
   console.log(translate_url)
   var encodedUrl = encodeURI(translate_url)
-  let response = await axios.get(encodedUrl)
+  let response = await axios.get(encodedUrl, {
+    headers: {
+      'Content-Type': 'text/html;charset=UTF-8',
+      'User-Agent':
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 ' +
+        '(KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
+    },
+    proxy: {
+      host: '127.0.0.1',
+      port: 7890,
+    },
+  })
   console.log(response.data)
   var obj = eval(response.data)
   var r = obj[0][0][0]
